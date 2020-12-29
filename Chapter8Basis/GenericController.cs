@@ -1,4 +1,5 @@
 ﻿using CrudInterfaces;
+using Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -42,6 +43,11 @@ namespace Chapter8Basis
         {
             deleter.Delete(entity);
             Console.WriteLine("DeleteEntity: Delete entity");
+        }
+
+        internal void CreateEntity(Item itm)
+        {
+            throw new NotImplementedException();
         }
     }
 }
